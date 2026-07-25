@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de Comissão</title>
     <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
 </head>
 <body>
     <main>
@@ -13,17 +14,22 @@
                 <h1>Calculadora de Comissão</h1>
         
                 <div>
-                    <input type="text" placeholder="Digite seu nome:">
+                    <input type="text" id="caixa-nome" placeholder="Digite seu nome:">
                     <br> <br>
-                    <input type="text" placeholder="Digite o valor de vendas:">
+                    <input type="text" id="caixa-valor" placeholder="Digite o valor de vendas:">
                     <br><br>
                     <div class="botao">
-                        <button type="button">Calcular Salário</button>
+                        <button type="button" id="calcular">Calcular Salário</button>
+                        <button type="button" id="limpar">Limpar</button>
                     </div>
+
+                    <div class="resultado" id="resultado"><p>O resultado vai aparecer aqui</p></div>
+
                 </div>
 
             </section>
         </form>
+
     </main>
 </body>
 </html>
